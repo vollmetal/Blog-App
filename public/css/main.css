@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blogposts {
+    margin: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogpostItem {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    margin: 1rem;
+}
+
+.blogpostItem h4 {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    align-self: center;
+}
+
+.editButtons {
+    display: flex;
+}
+
+.editButtons form{
+    margin: 1rem;
+}

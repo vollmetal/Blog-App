@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/main.css">
+        
+    </head>
+    <body>
+        <header>
+            
+
+            
+        </header>
+        <div class="main">
+            <h1>Blog App</h1>
+            <ul id="blogposts">
+                {{#posts}}
+                <li id="{{id}}" class="blogpostItem">
+                    <h4>{{title}}</h4>
+                    <p>{{body}}</p>
+                    <div class="editButtons">
+                        <form action="/update-post/{{id}}">
+                            <button>Update</button>
+                        </form>
+                        <form action="/delete-post/{{id}}" method="post">
+                            <button>Delete</button>
+                        </form>
+                    </div>
+                    
+
+                </li>
+                {{/posts}}
+            </ul>
+        </div>
+        <div class="footer">
+            <form action="/make-post">
+                <button>Make new post</button>
+            </form>
+        </div>
+    </body>
+</html>
