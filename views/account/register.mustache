@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <header>
+            <form action="/">
+                <button>Back</button>
+            </form>
+
+            
+        </header>
+        <div class="main">
+            <h1 class="pageTitle">Register New Account</h1>
+            <form class="newPostForm" action="/account/register" method="post">
+                <div class="postInput">
+                    <span>Username: </span>
+                    <input type="text" name="username">
+                </div>
+                <div class="postInput">
+                    <span>Password: </span>
+                    <input type="text" name="password">
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+        <span class="shoutMessage">{{message}}</span>
+        <div>
+            <form action="/account/">
+                <button>Login to an existing account here</button>
+            </form>
+        </div>
+    </body>
+</html>
